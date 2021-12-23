@@ -16,6 +16,22 @@ title = prompt('Как называется ваш проект?');
 //    console.log(title);
 
 screens = prompt('Какие типы экранов нужно разработать ("Простые, Сложные, Интерактивные")?');
+switch (screens) {
+    case 'Простые':
+        screens = 'Простые';
+//        console.log(screens);
+        break;
+    case 'Сложные':
+        screens = 'Сложные';
+//        console.log(screens);
+        break;
+    case 'Интерактивные':
+        screens = 'Интерактивные';
+//        console.log(screens);
+        break;
+    default:
+        console.log('Вы ввели не верные данные');
+}
 //    console.log(screens);
 
 screenPrice = prompt('Сколько будет стоить данная работа?');
