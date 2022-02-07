@@ -1,11 +1,8 @@
-var title = 'project1';
-var screens = "Прстые, Сложные, Интерактивные";
-var screenPrice = 135;
-var rollback = 13;
-var fullPrice = 135345;
-var adaptive = true;
-console.log(title, fullPrice, adaptive);
-console.log(screens.length);
-console.log("Стоимость верстки экранов: "+ screenPrice  + "Стоимость разработки сайта: "+ fullPrice);
-console.log(screens.toLocaleLowerCase().split());
-console.log(Math.trunc(fullPrice * (rollback/100)));
+let title
+let screens
+let screenPrice
+let rollback
+let fullPrice
+let adaptive
+alert('Привет!')
+console.log('Привет v2!')
