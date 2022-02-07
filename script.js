@@ -1,11 +1,23 @@
-var title = 'project1';
-var screens = "Прстые, Сложные, Интерактивные";
-var screenPrice = 135;
-var rollback = 13;
-var fullPrice = 135345;
-var adaptive = true;
-console.log(title, fullPrice, adaptive);
-console.log(screens.length);
-console.log("Стоимость верстки экранов: "+ screenPrice  + "Стоимость разработки сайта: "+ fullPrice);
-console.log(screens.toLocaleLowerCase().split());
-console.log(Math.trunc(fullPrice * (rollback/100)));
+const button = document.getElementById('btn')
+const changeColor = document.getElementById('text')
+const square = document.getElementById('square')
+const btnClick = document.getElementById('e_btn')
+const changeRange = document.getElementById('range')
+const rangeSpan = document.getElementById('range-span')
+const circle = document.getElementById('circle')
+
+button.addEventListener('click', () => {
+if (changeColor.value === '') {
+    alert('Выбери цвет')
+    } else {
+        square.style.backgroundColor = changeColor.value
+}
+})
+
+btnClick.style.display = 'none'
+
+changeRange.addEventListener('input', () => {
+    rangeSpan.textContent = changeRange.value
+    circle.style.width = changeRange.value + "%"
+    circle.style.height = changeRange.value + "%"
+})
