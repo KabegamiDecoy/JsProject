@@ -1,17 +1,4 @@
-//1 урок
-let title = 'project1';
-let screens = "Порстые, Сложные, Интерактивные";
-let screenPrice = 135;
-let rollback = 13;
-let fullPrice = 135345;
-let adaptive = true;
-//2 урок
-console.log(title, fullPrice, adaptive);
-console.log(screens.length);
-console.log("Стоимость верстки экранов: "+ screenPrice  + "Стоимость разработки сайта: "+ fullPrice);
-console.log(screens.toLocaleLowerCase().split());
-console.log(Math.trunc(fullPrice * (rollback/100)));
-//3 урок
+rollback = 13
 title = prompt('Как называется ваш проект?');
 //    console.log(title);
 
